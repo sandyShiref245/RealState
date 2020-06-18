@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>عقارات</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        .filter-search {
+            bottom: 40px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        #rangeBox {
+            /* carry complete  range box*/
+            width: 300px;
+            height: 60px;
+        }
+        
+        #sliderBox {
+            position: relative;
+            top: 0%;
+            width: 300px;
+            /*2x width*/
+        }
+        
+        #slider0to50 {
+            width: 150px;
+            /*1x width*/
+            position: absolute;
+            left: 0%;
+        }
+        
+        #slider51to100 {
+            width: 75px;
+            /*1x width*/
+            position: absolute;
+            left: 50%;
+        }
+        
+        #inputRange {
+            position: relative;
+            top: 50%;
+        }
+        
+        #inputRange::after {
+            content: "";
+            clear: both;
+            display: block
+        }
+        
+        #inputRange #min {
+            width: 40%;
+            float: left;
+        }
+        
+        #inputRange #max {
+            width: 40%;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader">
+
+        </div>
+    </div>
+    <div class="compare">
+
+        <p style="margin-top:10px;margin-bottom: 10px !important">قارن بنفسك <i class="fa fa-minus"></i></p>
+        <p id="hh"></p>
+        <p id="h"></p>
+        <p id="hhh"></p>
+    </div>
+    <div class="social-media">
+        <a href="#tel"><i class="fa fa-phone"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-whatsapp"></i></a>
+
+
+        <div class="online-chat">
+            <img src="online.png">
+
+        </div>
+    </div>
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 header-top-left">
+                        <div class="top-info">
+                            <i class="fa fa-phone"></i> (+88) 666 121 4321
+                        </div>
+                        <div class="top-info">
+                            <i class="fa fa-envelope"></i> info.Aqar@Aqar.com
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-right header-top-right">
+                        <div class="top-social">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="user-panel">
+                            <a href=""><i class="fa fa-user-circle-o"></i></a>
+                            <a href="form/form.html"> تسجيل</a>
+                            <a href=""><i class="fa fa-sign-in"></i> انشاء حساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="site-navbar">
+                        <a href="#" class="site-logo animated   delay-160s  slow" style=" animation-iteration-count:1"><img src="logo2.png" alt=""></a>
+
+                        <div class="nav-switch">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <ul class="main-menu">
+                            <li><a href="index.html">الصفحة الرئيسية</a></li>
+                            <li><a href="search.html">عن الشركة</a></li>
+                            <li><a href="#" <!--href="single-list.html">Go Aqar</a></li>
+                            <li><a href="#" <!--href="blog.html">اعلانات مميزة</a></li>
+                            <li><a href="#" <!--href="about.html">الشروط والاحكام</a></li>
+                            <li><a href="#" <!--href="about.html">من نحن</a></li>
+
+                            <li><a href="#" <!--href="contact.html">تواصل معنا</a></li>
+                            <li class="color"><a href="web/index.html" style="margin-left: 0" <!--href="contact.html">اعلن عن عقارك</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Header section end -->
+
+
+    <!-- Page top section -->
+    <section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+        <div class="container text-white">
+            <h2>الفيلات</h2>
+        </div>
+
+    </section>
+
+
+    <!-- Filter form section -->
+    <div class="filter-search">
+        <div class="container">
+            <form class="filter-form">
+                <button class="site-btn fs-submit">بحث</button>
+                <input type="text" syle="margin-right:20px" placeholder="ادخل اسم الشارع او كلمة دالة عن العقار">
+
+
+
+
+                <select>
+                        <option value="City">الترخيص</option>
+                        <option value="City">سكنى</option>
+                        <option value="City">ادارى</option>
+                    </select>
+
+                <select>
+                <option value="City">نوع العرض</option>
+                <option value="City">للبيع</option>
+                <option value="City">للايجار</option>
+        </select>
+                <select>
+                        <option value="City">المنطقة</option>
+                        <option value="City">المعادى</option>
+                        <option value="City">المعادى</option>
+                    </select>
+                <select>
+                        <option value="City">المحافظة</option>
+                        <option value="City">القاهرة</option>
+                        <option value="City">الجيزة</option>
+                    </select>
+                <select style="border-radius: 0px 28px 28px 0;">
+                        <option value="City">نوع العقار</option>
+                        <option value="City">شقة</option>
+                        <option value="City">ارض</option>
+                </select>
+
+            </form>
+        </div>
+    </div>
+    <!-- Filter form section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="second">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+
+                <!--right-->
+                <div class="col-md-9" style="padding: 0">
+                    <section class="result">
+                        <section class="feature-section spad">
+                            <!-- <div class="container">-->
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/1.jpg">
+                                                <div class="sale-notic">للبيع</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5>فيلا دورين بها حمام سباحة</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/2.jpg">
+                                                <div class="sale-notic">للبيع</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5> شقة دوبلكس دورين تشطيب سوبر لوكس على المفتاح</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p style="position: relative;left: -5px;"><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/3.jpg">
+                                                <div class="rent-notic">للايجار</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5>شقق بمساحات كبيرة فى كمبوند</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p style="position: relative;left: -5px;"><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/4.jpg">
+                                                <div class="sale-notic">للبيع</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5>محل فى نادى يطل على حمام سباحة</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p style="position: relative;left: -5px;"><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/5.jpg">
+                                                <div class="rent-notic">للايجار</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5>استوديو به جميع الكماليات</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p style="position: relative;left: -5px;"><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <!-- feature -->
+                                    <a href="single-list.html">
+                                        <div class="feature-item">
+                                            <div class="feature-pic set-bg" data-setbg="img/feature/6.jpg">
+                                                <div class="sale-notic">للبيع</div>
+                                            </div>
+                                            <div class="feature-text">
+                                                <div class="text-center feature-title">
+                                                    <h5>شقق بمساحات كبيرة فى كمبوند</h5>
+                                                    <!-- <p><i class="fa fa-map-marker"></i> الجيزة,القاهرة</p>-->
+                                                </div>
+                                                <div class="room-info-warp">
+                                                    <div class="room-info">
+                                                        <div class="rf-left" style="    margin-left: 17px;">
+                                                            <p style="position: relative;left: 24px;"><i class="fa fa-th-large"></i>120 متر</p>
+                                                            <p><i class="fa fa-bed"></i>2 غرفة نوم</p>
+
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p style="display: none"><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p><i class="fa fa-car"></i> 2 جراج</p>
+                                                            <p style="position: relative;left: -5px;"><i class="fa fa-bath"></i> 2 حمام</p>
+                                                        </div>
+                                                        <div class="cl"></div>
+                                                    </div>
+                                                    <div class="room-info">
+                                                        <div class="rf-left lft">
+                                                            <p><i class="fa fa-user"></i> محمد مصطفى</p>
+                                                        </div>
+                                                        <div class="rf-right">
+                                                            <p><i class="fa fa-clock-o"></i> منذ يوم واحد</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="room-price">500,000 <span>EGP</span> </a>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- </div>-->
+
+                            <div class="site-pagination">
+                                <a href="#"><i class="fa fa-angle-left"></i></a>
+                                <span>1</span>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </section>
+                    </section>
+
+                </div>
+                <!--end right-->
+                <!--نهايه البحث-->
+
+                <div class="col-md-3">
+                    <aside>
+                        <div class="box age">
+                            <h1>السعر</h1>
+                            <div class="in">
+                                <!-- <input value="500" min="500" max="50000" step="500" type="range">-->
+                                <div id="rangeBox">
+                                    <div id="sliderBox">
+                                        <input type="range" id="slider0to50" step="0" min="0" max="30">
+                                        <input type="range" id="slider51to100" step="0" min="51" max="100">
+                                    </div>
+
+                                </div>
+                                <p style="display: inline-block"><span>EGP</span>1000</p>
+                                <p style="display:inline-block;float: left"><span>EGP</span>500.000</p>
+                            </div>
+                        </div>
+                        <!--بدايه السمات الشخصيه -->
+                        <div class="box ">
+                            <!--بدايه الطول-->
+                            <div class="accordion">
+                                <header class="active">المساحة <i class="fas fa-plus"></i></header>
+                                <div class="check">
+                                    <div class="dropdown" style="float: left">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                             اعلى مساحة
+                                                            </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">1000متر</a>
+                                            <a class="dropdown-item" href="#">500متر</a>
+                                            <a class="dropdown-item" href="#">300متر</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown" style="float:right">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  اقل مساحة
+                                                </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">80 متر</a>
+                                            <a class="dropdown-item" href="#">90 متر</a>
+                                            <a class="dropdown-item" href="#">120 متر</a>
+                                        </div>
+                                    </div>
+                                    <div class="cl"></div>
+
+                                </div>
+                            </div>
+                            <!--نهايه الطول-->
+                            <!--بدايه الوزن  -->
+                            <div class="accordion">
+                                <header>طريقة الدفع<i class="fas fa-plus"></i></header>
+                                <div class="check">
+
+                                    <div class="chbox">
+
+                                        <span>كاش</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span> تقسيط</span>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--نهايه الوزن-->
+                            <!--بدايه لون البشره  -->
+                            <div class="accordion">
+                                <header>الاطلالة <i class="fas fa-plus"></i></header>
+                                <div class="check">
+
+                                    <div class="chbox">
+
+                                        <span> شارع فرعى</span>
+                                        <input type="radio">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>شارع رئيسى</span>
+                                        <input type="radio">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>ناصية</span>
+                                        <input type="radio">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>بحر /نيل </span>
+                                        <input type="radio">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--نهايه لون البشره  -->
+                            <!--بدايه لون العين-->
+                            <div class="accordion">
+                                <header>نوع التشطيب<i class="fas fa-plus"></i></header>
+                                <div class="check">
+                                    <div class="chbox">
+
+                                        <span> سوبر لوكس</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>لوكس</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span> تشطيب</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span> نصف تشطيب</span>
+                                        <input type="checkbox">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--نهايه لون العين-->
+                            <!--بدايه لون الشعر-->
+                            <div class="accordion">
+                                <header>عدد الغرف<i class="fas fa-plus"></i></header>
+                                <div class="check">
+                                    <div class="chbox">
+
+                                        <span> 1</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>2</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>3</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>4</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>+5</span>
+                                        <input type="checkbox">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--نهايه لون الشعر-->
+                            <!--بدايه شكل الجسم -->
+                            <div class="accordion">
+                                <header>الدور<i class="fas fa-plus"></i></header>
+                                <div class="check">
+                                    <div class="chbox">
+
+                                        <span> الاول</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>الثانى</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span> الثالث</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span>الرابع</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="chbox">
+
+                                        <span> ازيد من الرابع</span>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--نهايه شكل الجسم-->
+
+                        </div>
+                        <!--نهايه السمات الشخصيه -->
+
+
+
+                </div>
+                <!--نهايه المسكن -->
+
+                </aside>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Clients section -->
+    <div class="clients-section ">
+        <div class="container ">
+            <p> شركاء النجاح <i class="fa fa-map-marker"></i></p>
+            <div class="clients-slider owl-carousel ">
+                <a href="# ">
+                    <img src="img/partner/1.png " alt=" ">
+                </a>
+                <a href="# ">
+                    <img src="img/partner/2.png " alt=" ">
+                </a>
+                <a href="# ">
+                    <img src="img/partner/3.png " alt=" ">
+                </a>
+                <a href="# ">
+                    <img src="img/partner/4.png " alt=" ">
+                </a>
+                <a href="# ">
+                    <img src="img/partner/5.png " alt=" ">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer section -->
+    <footer class="footer-section set-bg " data-setbg="img/footer-bg.jpg ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 col-sm-12 footer-widget ">
+                    <a href="# " class="site-logo animated delay-160s slow " style=" display: block;margin: auto;margin-bottom: 85px "><img src="img/logo.png " alt=" "></a>
+
+
+                    <div class="social ">
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-twitter "></i></a>
+                        <a href="# "><i class="fa fa-instagram "></i></a>
+                        <a href="# "><i class="fa fa-pinterest "></i></a>
+                        <a href="# "><i class="fa fa-linkedin "></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 footer-widget ">
+                    <div class="contact-widget ">
+                        <h5 class="fw-title ">تواصل معنا</h5>
+                        <p><i class="fa fa-map-marker "></i>13 شارع محمد احمد ,المعادى ,القاهرة </p>
+                        <p><i class="fa fa-phone "></i> 666 121 4321</p>
+                        <p><i class="fa fa-envelope "></i>infooooooo@gmail.com</p>
+                        <p><i class="fa fa-clock-o "></i>Mon - Sat, 08 AM - 06 PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 footer-widget ">
+                    <div class="double-menu-widget ">
+                        <h5 class="fw-title ">اشهر المناطق</h5>
+                        <ul>
+                            <li><a href=" ">القاهرة</a></li>
+                            <li><a href=" ">الجيزة</a></li>
+                            <li><a href=" ">الاسكندرية</a></li>
+                            <li><a href=" ">المنوقية</a></li>
+                            <li><a href=" ">الشرقية</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href=" ">القاهرة</a></li>
+                            <li><a href=" ">الجيزة</a></li>
+                            <li><a href=" ">الاسكندرية</a></li>
+                            <li><a href=" ">المنوقية</a></li>
+                            <li><a href=" ">الشرقية</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 footer-widget ">
+                    <div class="newslatter-widget ">
+                        <h5 class="fw-title ">اخبارنا</h5>
+                        <p> اكتب لنا البريد الالكترونى الخاص بك لتحصل على العروض واحدث العقارات.</p>
+                        <form class="footer-newslatter-form ">
+                            <input type="text " placeholder="البريد الالكترونى ">
+                            <button><i class="fa fa-send "></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom ">
+                <div class="footer-nav ">
+                    <ul>
+                        <li><a href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="search.html">عن الشركة</a></li>
+                        <li><a href="#" <!--href="single-list.html">Go Aqar</a></li>
+                        <li><a href="#" <!--href="blog.html">اعلانات مميزة</a></li>
+                        <li><a href="#" <!--href="about.html">الشروط والاحكام</a></li>
+                        <li><a href="#" <!--href="about.html">من نحن</a></li>
+
+                        <li><a href="#" <!--href="contact.html">تواصل معنا</a></li>
+
+                    </ul>
+                </div>
+                <div class="copyright ">
+                    <p>
+
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This website is made with by <a href="http://egydesigner.com/ " target="_blank ">egydesigner</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(".accordion .check ").css("display", "none");
+        $(".accordion:first-of-type .check ").css("display", "block");
+        $(".accordion header").each(function() {
+            $(this).click(function() {
+                if ($(this).next().css("display") == "none") {
+                    console.log($(this).next());
+                    $(this).next().slideDown(1000);
+                    $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+                    $(this).addClass("active");
+                    $(this).parent().siblings().find("header").removeClass("active");
+                    $(this).parent().siblings().find(".check").slideUp(1000);
+                    $(this).parent().siblings().find("i").removeClass("fa-minus").addClass("fa-plus");
+
+                } else {
+                    $(this).next().slideUp(1000);
+
+
+
+
+
+                }
+            });
+        });
+    </script>
+    <script>
+        var sliderLeft = document.getElementById("slider0to50");
+        var sliderRight = document.getElementById("slider51to100");
+        var inputMin = document.getElementById("min");
+        var inputMax = document.getElementById("max");
+
+        ///value updation from input to slider
+        //function input update to slider
+        function sliderLeftInput() { //input udate slider left
+            sliderLeft.value = inputMin.value;
+        }
+
+        function sliderRightInput() { //input update slider right
+            sliderRight.value = (inputMax.value); //chnage in input max updated in slider right
+        }
+
+        //calling function on change of inputs to update in slider
+        inputMin.addEventListener("change", sliderLeftInput);
+        inputMax.addEventListener("change", sliderRightInput);
+
+
+        ///value updation from slider to input
+        //functions to update from slider to inputs 
+        function inputMinSliderLeft() { //slider update inputs
+            inputMin.value = sliderLeft.value;
+        }
+
+        function inputMaxSliderRight() { //slider update inputs
+            inputMax.value = sliderRight.value;
+        }
+        sliderLeft.addEventListener("change", inputMinSliderLeft);
+        sliderRight.addEventListener("change", inputMaxSliderRight);
+    </script>
+
+</body>
+
+</html>

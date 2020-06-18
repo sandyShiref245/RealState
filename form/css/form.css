@@ -1,0 +1,489 @@
+    @font-face {
+        font-family: "font2";
+        src: url(fonts/HelveticaNeueW23-Reg.woff);
+    }
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #dd0000;
+    }
+    
+    .container {
+        padding: 0;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    /*logo*/
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+    /*start div moved*/
+    
+    .container>div {
+        width: 50%;
+        height: 100%;
+        background-image: url("../images/61M4CNpjgFL._SY355_.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1000;
+        right: 0;
+    }
+    
+    .container>div .overlay {
+        background-color: black;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*.container>div>.overlay .right {
+    height: 53%;
+    position: absolute;
+    width: 70px;
+    right: -24px;
+    bottom: -3px;
+    transform: rotate(3deg);
+}
+
+
+.container>div> .overlay .right-af{
+    height: 105%;
+    transform: rotate(9deg);
+    position: absolute;
+    width: 45px;
+    right: 3px;
+    top: -10px;
+}
+.container>div> .overlay .left{
+    height: 53%;
+    position: absolute;
+    width: 70px;
+    left: -24px;
+    bottom: -3px;
+    transform: rotate(-3deg);
+}
+
+.container>div>.overlay .left-be {
+    height: 105%;
+    transform: rotate(-9deg);
+    position: absolute;
+    width: 45px;
+    left: 3px;
+    top: -10px;
+}*/
+    
+    .container>div .overlay .first {
+        margin-top: -145%;
+    }
+    
+    .container>div .overlay .first h4 {
+        color: #fff;
+    }
+    
+    .container>div .overlay .first p {
+        color: rgb(189, 181, 181);
+        font-size: 15px;
+        font-weight: 800;
+        margin: 3px auto auto auto;
+    }
+    
+    .container>div .overlay .first .btn {
+        margin: auto;
+        margin-top: 45px;
+    }
+    
+    .container>div .overlay .first .btn button {
+        font-weight: bold;
+        border-radius: 2px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
+    }
+    
+    .container>div .overlay .first .btn button:hover {
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container>div .overlay .second {
+        display: none;
+    }
+    
+    .container>div .overlay .second h4 {
+        color: #fff;
+    }
+    
+    .container>div .overlay .second p {
+        color: rgb(189, 181, 181);
+        font-size: 18px;
+        margin: 3px auto auto auto;
+        text-align: center;
+    }
+    
+    .container>div .overlay .second .btn {
+        margin: auto;
+        margin-top: 45px;
+    }
+    
+    .container>div .overlay .second .btn button {
+        font-weight: bold;
+        border-radius: 2px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
+    }
+    
+    .container>div .overlay .second .btn button:hover {
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    /*end div moved*/
+    /*start login*/
+    
+    .container .login {
+        transform: rotateY(90deg);
+    }
+    
+    .container .login .row h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .container .login .row p {
+        font-size: 15px;
+        color: gray;
+    }
+    
+    .container .login .row form {
+        margin-top: 30px;
+    }
+    
+    .container .login>p {
+        font-size: 14px;
+    }
+    
+    .container .login .row form .row>p {
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 14px;
+        text-align: right;
+    }
+    
+    .container .login .row form .row input,
+    .container .signup .row .one .row input,
+    .container .signup .row .two .row input,
+    .container .signup .row .two select {
+        outline: none;
+        margin-bottom: 30px;
+        padding: 6px 10px 6px 10px;
+        border-radius: 20px;
+        border: 1px #dd0000 solid;
+        direction: rtl;
+    }
+    
+    .container .signup .row .two select option {
+        outline: none;
+        margin-bottom: 30px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+        border: 1px #dd0000 solid;
+        direction: rtl;
+    }
+    
+    .container .login .row form .row .submit {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container .login .row form .row .submit input[type=submit] {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #dd0000;
+        color: #fff;
+        border: 1px solid #dd0000;
+    }
+    
+    .container .login .row form .row .submit input[type=submit]:hover {
+        color: #dd0000;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .login .row form .row .tomail {
+        margin: auto;
+    }
+    
+    .container .login .row form .row .tomail button {
+        display: none;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #fff;
+        ;
+        color: #dd0000;
+        border: 1px solid #dd0000;
+        padding: 10px;
+    }
+    
+    .container .login .row form .row .tomail button:hover {
+        color: #fff;
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    /*end login*/
+    /* start signup*/
+    
+    .container .signup {
+        transform: rotateY(90deg);
+    }
+    
+    .container .signup .row h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .container .signup .row>p {
+        font-size: 17px;
+    }
+    
+    .container .signup .row .one {
+        margin-top: 25px;
+        display: block;
+    }
+    
+    .container .signup .row .one .row>p {
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 14px;
+        text-align: right;
+    }
+    
+    .container .signup .row .one .row input {
+        outline: none;
+        margin-bottom: 15px;
+        padding: 6px 15px 6px 0;
+    }
+    
+    .signup .row .one select {
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        border-radius: 20px;
+        border: 1px #dd0000 solid;
+        direction: rtl;
+        margin-bottom: 15px;
+        color: gray
+    }
+    
+    .container .signup .row .one .row .tomail {
+        display: none;
+    }
+    
+    .container .signup .row .one .row .tomail button {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #fff;
+        ;
+        color: #dd0000;
+        border: 1px solid #dd0000;
+        padding: 10px;
+    }
+    
+    .container .signup .row .one .row .tomail button:hover {
+        color: #fff;
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .signup .row .one .row .next {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .container .signup .row .one .row .next button {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #dd0000;
+        color: #fff;
+        padding: 10px;
+        border: 1px solid #dd0000;
+    }
+    
+    .container .signup .row .one .row .next button:hover {
+        color: #dd0000;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .signup .row .two {
+        margin-top: 35px;
+        display: none;
+        transform: rotateY(90deg),
+    }
+    
+    .container .signup .row .two .row .next {
+        margin: auto;
+    }
+    
+    .container .signup .row .two select {
+        outline: none;
+        margin-bottom: 25px;
+        padding: 6px 10 6px 0;
+        font-size: 18px;
+        color: gray;
+    }
+    
+    .container .signup .row .two .row .next button {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #dd0000;
+        color: #fff;
+        padding: 10px;
+        border: 1px solid #dd0000;
+        margin-bottom: 25px;
+    }
+    
+    .container .signup .row .two .row .next button:hover {
+        color: #dd0000;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .signup .row .two .row .prev {
+        margin: auto;
+    }
+    
+    .container .signup .row .two .row .prev button {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #dd0000;
+        padding: 10px;
+        border: 1px solid #dd0000;
+        margin-bottom: 25px;
+    }
+    
+    .container .signup .row .two .row .prev button:hover {
+        color: #fff;
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .signup .row .two .row>p {
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 16px;
+        text-align: right;
+    }
+    
+    .container .signup .row .two .row input {
+        outline: none;
+        margin-bottom: 25px;
+        padding: 6px 10 6px 0;
+    }
+    
+    3 .container .signup .row .two .row .gender {
+        margin: 20px auto 35px auto;
+    }
+    
+    .container .signup .row .two .row .gender span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .container .signup .row .three {
+        display: none;
+    }
+    
+    .container .signup .row .three .image-box {
+        margin: 0 auto;
+        margin-top: 1em;
+        height: 14em;
+        width: 16em;
+        background-image: url(../images/personimage.png);
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+    }
+    
+    .container .signup .row .three p {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .container .signup .row .three .submit,
+    .container .signup .three .prev {
+        margin: auto
+    }
+    
+    .container .signup .row .three .submit input {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #dd0000;
+        color: #fff;
+        padding: 10px;
+        border: 1px solid #dd0000;
+        margin-bottom: 25px;
+    }
+    
+    .container .signup .row .three .submit input:hover {
+        color: #dd0000;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .container .signup .row .three .prev button {
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #dd0000;
+        padding: 10px;
+        border: 1px solid #dd0000;
+        margin-bottom: 25px;
+    }
+    
+    .container .signup .row .three .prev button:hover {
+        color: #fff;
+        background-color: #dd0000;
+        transition: all 0.2s ease-in-out;
+    }
+    /*end signup*/

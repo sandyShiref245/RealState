@@ -1,0 +1,25 @@
+new Vue({
+    el: '#Count',
+    data: {
+        counter: 0,
+        name: 'max',
+        x: 0,
+        y: 0
+    },
+    methods: {
+        click: function() {
+            this.counter++;
+        },
+        increse: function(step, event) {
+            this.counter += Step
+        },
+        cordinate: function(event) {
+            this.x = event.clientX;
+            this.y = event.clientY;
+            /*be3rf mkan al mouse fen*/
+        },
+        alert: function() {
+            alert('alert');
+        }
+    },
+})

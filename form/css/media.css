@@ -1,0 +1,166 @@
+@media (max-width: 767px) {
+    .row {
+        margin: 0;
+    }
+    .container>div {
+        display: none;
+    }
+    .container .login {
+        display: block;
+    }
+    .container .login .row form .row input {
+        width: 89%;
+        margin: auto auto 15px auto;
+        padding: 4px 11px;
+    }
+    .container .login .row form .row>p {
+        margin-left: 25px;
+    }
+    .container .login .row form .row .submit {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .container .login .row form .row .submit input[type=submit] {
+        text-align: center;
+        width: 40%;
+        padding: 10px 0;
+    }
+    .container .login .row form .row .tomail {
+        text-align: center;
+        width: 40%;
+        margin-top: 15px;
+    }
+    .container .login .row form .row .tomail button {
+        display: block;
+    }
+    .container .signup {
+        transform: rotateY(0deg);
+    }
+    .container .signup {
+        display: none;
+    }
+    .container .signup .row .one {
+        margin-left: 20px;
+    }
+    .container .signup .row .one .row>span {
+        display: none;
+    }
+    .container .signup .row .one .row>p {
+        width: 40%;
+    }
+    .container .signup .row .one .row>p:nth-of-type(2) {
+        margin-left: 40px;
+    }
+    .container .signup .row .one .row input {
+        width: 100%;
+    }
+    .container .signup .row .one .row input:first-of-type,
+    .container .signup .row .one .row input:nth-of-type(2) {
+        width: 100%;
+    }
+    .container .signup .row .one .row input:nth-of-type(2) {}
+    .container .signup .row .one .row .next {
+        width: 40%;
+    }
+    .container .signup .row .two {
+        margin-left: 40px;
+    }
+    .container .signup .row .two .row input,
+    .container .signup .row .two select {
+        width: 89%;
+    }
+    .container .signup .row .two .row .gender {
+        margin: 0;
+    }
+    .container .signup .row .two .row .gender span {
+        width: 25%;
+    }
+    .container .signup .row .two .row input[type=radio] {
+        width: 10%;
+    }
+    .container .signup .row .two .row .prev,
+    .container .signup .row .two .row .next {
+        width: 40%;
+    }
+    .container .signup .row .three .row span {
+        display: none;
+    }
+    .container .signup .row .three .submit,
+    .container .signup .three .prev {
+        width: 40%;
+    }
+    .container .signup .row .one .row .tomail {
+        display: block;
+        width: 40%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .row {
+        margin: 0;
+    }
+    .container>div {
+        display: none;
+    }
+    .container .login {
+        display: block;
+    }
+    .container .login .row form {
+        margin: 45px auto auto auto
+    }
+    .container .login .row form .row input {
+        margin: auto auto 30px auto;
+        padding: 6px 0;
+    }
+    .container .login .row form .row .submit {
+        margin-top: 15px;
+    }
+    .container .login .row form .row .submit input[type=submit] {
+        width: 45%;
+        padding: 10px 0;
+    }
+    .container .login .row form .row .tomail button {
+        display: block;
+    }
+    .container .signup {
+        transform: rotateY(0deg);
+    }
+    .container .signup {
+        display: none;
+    }
+    .container .signup .row form {
+        margin: auto;
+    }
+    .container .signup .row .one .row>span {
+        display: none;
+    }
+    .container .signup .row .one .row>p:nth-of-type(2) {
+        margin-left: -2px;
+    }
+    .container .signup .row .one .row input {
+        width: 89%;
+    }
+    .container .signup .row .one .row input:first-of-type,
+    .container .signup .row .one .row input:nth-of-type(2) {
+        width: 40%;
+    }
+    .container .signup .row .one .row input:nth-of-type(2) {
+        margin-left: 40px;
+    }
+    .container .signup .row .two .row .gender span {
+        width: 25%;
+    }
+    .container .signup .row .two .row input[type=radio] {
+        width: 10%;
+    }
+    .container .signup .row .two .row .prev,
+    .container .signup .row .two .row .next {
+        margin-left: 0;
+    }
+    .container .signup .row .three .row span {
+        display: none;
+    }
+    .container .signup .row .one .row .tomail {
+        display: block;
+    }
+}
